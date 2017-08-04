@@ -310,6 +310,8 @@ def find_bean(params):
 
 def help():
     print("scheduler COMMAND [path_to_file]")
+    print("if scheduler-service.xml exist in current dir path_to_file can be empty.\n")
+    print("COMMAND:")
     print()
     print("  list - print list all MBeans")
     print()
@@ -319,7 +321,7 @@ def help():
     print()
     print("  create - dialogue for create MBean")
     print()
-    print("  tcreate - dialogue for create MBean from template.xml in current directory")
+    print("  tcreate - dialogue for create MBean from template.xml in Base dir")
     print()
     print("  edit NAME <arg> <value> - change specific attribute")
     print("\n  specific edit command:")
