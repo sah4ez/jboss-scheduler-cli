@@ -1,0 +1,12 @@
+<server>
+    <mbean code="org.jboss.varia.scheduler.Scheduler" name=":service=Scheduler, schedule=Scheduler">
+        <depends>jboss.jca:service=LocalTxCM,name=Depends</depends>
+        <attribute name="StartAtStartup">true</attribute>
+        <attribute name="SchedulableClass">com.example.Async</attribute>
+        <attribute name="SchedulableArguments">args</attribute>
+        <attribute name="SchedulableArgumentTypes">java.lang.String</attribute>
+        <attribute name="InitialStartDate">NOW</attribute>
+        <attribute name="SchedulePeriod">5000</attribute>
+        <attribute name="InitialRepetitions">-1</attribute>
+    </mbean>
+</server>

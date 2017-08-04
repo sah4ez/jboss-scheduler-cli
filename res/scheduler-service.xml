@@ -1,0 +1,3 @@
+<server>
+<classpath codebase="." archives="mbean_timer.jar"/>
+</server>
